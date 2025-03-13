@@ -1,0 +1,16 @@
+.recipe-card {
+  text-align: center;
+}
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.recipe-card a {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}/*# sourceMappingURL=card.css.map */

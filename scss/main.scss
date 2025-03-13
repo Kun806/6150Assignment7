@@ -1,0 +1,18 @@
+@use "variables" as *;
+@use "functions" as *;
+@use "mixins" as *;
+@use "placeholders" as *;
+@use "grid";
+@use "flexbox";
+@use "footer";
+@use "card";
+@use "helpers";
+
+// Global Styles
+body {
+  font-family: $font-stack;
+  background-color: var(--background-color);
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}

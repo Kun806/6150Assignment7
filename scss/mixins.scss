@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin button($bg-color) {
+  background-color: $bg-color;
+  color: #fff;
+  padding: $spacing-small $spacing-medium;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  text-decoration: none;
+}

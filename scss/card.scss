@@ -1,0 +1,27 @@
+@use "placeholders" as *;
+@use "mixins" as *;
+@use "variables" as *;
+
+.destination-card {
+  @extend %card;
+
+  img {
+    width: 100%;
+    border-radius: $border-radius;
+  }
+
+  h2 {
+    margin: spacing("small") 0;
+    color: var(--heading-color);
+  }
+
+  a {
+    @include button($primary-color);
+    margin-top: spacing("small");
+    display: inline-block;
+
+    &:hover {
+      background-color: lighten($primary-color, 10%);
+    }
+  }
+}

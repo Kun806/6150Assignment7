@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: spacing("medium");
+}
+
+.details-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: spacing("medium");
+
+  &__image img {
+    width: 100%;
+    border-radius: $border-radius;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: spacing("medium");
+  }
+}

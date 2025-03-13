@@ -1,0 +1,8 @@
+@use "variables" as *;
+
+.site-footer {
+  text-align: center;
+  padding: spacing("small");
+  background-color: darken($primary-color, 10%);
+  color: #fff;
+}

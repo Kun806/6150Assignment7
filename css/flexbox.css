@@ -1,0 +1,48 @@
+:root {
+  --background-color: #f5f5f5;
+  --heading-color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2196f3;
+  padding: spacing("small");
+}
+.navbar .brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: spacing("small");
+  margin: 0;
+  padding: 0;
+}
+.navbar .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar .menu li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: spacing("large") 0;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: spacing("small");
+}/*# sourceMappingURL=flexbox.css.map */

@@ -1,0 +1,19 @@
+// Example of a loop
+$colors: (blue, green, red);
+
+@each $color in $colors {
+  .border-#{$color} {
+    border: 2px solid #{$color};
+  }
+}
+
+// Example of conditional logic
+@mixin theme($mode) {
+  @if $mode == "dark" {
+    background-color: #333;
+    color: #fff;
+  } @else {
+    background-color: #fff;
+    color: #333;
+  }
+}

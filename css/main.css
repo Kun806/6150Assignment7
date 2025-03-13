@@ -1,0 +1,130 @@
+:root {
+  --background-color: #f5f5f5;
+  --heading-color: #222;
+}
+
+.destination-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: spacing("medium");
+}
+
+.details-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: spacing("medium");
+}
+.details-layout__image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.details-layout__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: spacing("medium");
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2196f3;
+  padding: spacing("small");
+}
+.navbar .brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: spacing("small");
+  margin: 0;
+  padding: 0;
+}
+.navbar .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar .menu li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: spacing("large") 0;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: spacing("small");
+}
+
+.site-footer {
+  text-align: center;
+  padding: spacing("small");
+  background-color: rgb(11.5384615385, 124.0384615385, 213.4615384615);
+  color: #fff;
+}
+
+.destination-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.destination-card h2 {
+  margin: spacing("small") 0;
+  color: var(--heading-color);
+}
+.destination-card a {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: spacing("small");
+  display: inline-block;
+}
+.destination-card a:hover {
+  background-color: rgb(81.3846153846, 172.8846153846, 245.6153846154);
+}
+
+.border-blue {
+  border: 2px solid blue;
+}
+
+.border-green {
+  border: 2px solid green;
+}
+
+.border-red {
+  border: 2px solid red;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

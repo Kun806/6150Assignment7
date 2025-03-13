@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+@function spacing($size) {
+  @if $size == "small" {
+    @return $spacing-small;
+  } @else if $size == "medium" {
+    @return $spacing-medium;
+  } @else if $size == "large" {
+    @return $spacing-large;
+  } @else {
+    @return $spacing-medium; // default
+  }
+}
